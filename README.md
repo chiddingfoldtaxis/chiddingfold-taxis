@@ -40,12 +40,12 @@ Then open <http://localhost:5173>. That's the whole site — edit `index.html`,
 ## 🎨 Imagery (AI-generated or real photos)
 
 The design looks complete out of the box with tasteful placeholders. To fill the two photo
-slots (the **hero** and the **"meet your driver"** portrait), you have two options:
+slots (the **hero** and the **car / "why book with us"** image), you have two options:
 
 **A) Real photos (best for trust).** Drop files into `assets/images/`:
-`hero.webp` (a car on a Surrey lane / your car) and `about.webp` (a real photo of the
-owner beside the car). They'll appear automatically. A real photo of the actual driver beats
-any AI image — it's the whole point of an owner-driver brand.
+`hero.webp` (a car on a Surrey lane) and `about.webp` (a clean, well-presented car — the
+vehicle, not one named person). They'll appear automatically. A real photo of an actual
+clean car reads more trustworthy than a render.
 
 **B) Generate realistic imagery with the OpenAI API.** You run this with **your own** API key
 (it's never committed):
@@ -60,7 +60,9 @@ npm run images -- --only hero,airport
 Costs a few dollars for the whole set. **Before publishing any generated image, check:**
 - the car is **right-hand-drive** (wheel on the right — the model often defaults to US left-hand-drive);
 - **no legible number plate** and **no fake badges/logos**;
-- the **owner portrait is a real photo**, never an AI-fabricated person.
+- keep people **generic and illustrative** — fine to show a friendly driver at a distance,
+  but never present an AI face as a specific named person, and don't imply a bigger fleet
+  than the business has.
 
 Additional slots the script can produce (wire them into `index.html` where you like):
 `vehicle-exterior`, `vehicle-interior`, `airport`, `local-village`, `local-godalming`, `night-24-7`.

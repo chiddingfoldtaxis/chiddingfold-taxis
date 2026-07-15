@@ -12,20 +12,25 @@ GitHub Pages (plain HTML/CSS/JS, no build step, no framework — maximum speed +
 - **Hours:** 24 hours, 7 days a week
 - **Services:** Airport transfers (main trade), local rides, long distance, courier, weddings, shopping trips
 - **Airports served:** Heathrow, Gatwick, Luton, Stansted, London City
-- **Owner:** owner-driver; reputation = super reliable + extremely friendly + local knowledge
+- **Positioning:** a friendly, reliable *local team* — super reliable + friendly + local knowledge.
+  Run mostly by one owner-driver but he subcontracts to trusted local drivers when he can't make a
+  job, so copy must NOT imply "one named driver / the same person every time". Use generic team
+  voice ("our drivers", "we", "friendly local drivers"), never "owner-driver" in customer copy.
 
-## Do-not-fabricate list (needs owner confirmation before publishing)
+## Do-not-fabricate list (needs the business owner's confirmation before publishing)
 - Fixed prices / fares → site uses "get a quote / call for a price" only
 - Years established, fleet size, number of drivers
 - Specific licences, DBS, insurance claims, star ratings / review counts
-- The owner's face/name in a photo → use a REAL photo, never AI-fabricated person
+- Do NOT present an AI-generated face as a specific named real person, and do NOT imply a bigger
+  fleet than exists. Generic, illustrative driver/vehicle imagery is fine.
 
 ## Decisions locked with the site owner's friend (the client contact)
 - Name: **Chiddingfold Taxis**
 - Pricing: **no fixed prices** — drive to a call/quote
 - Primary CTA: **tap-to-call** 01483 387 475 (sticky call bar on mobile)
-- Imagery: **AI-generated realistic** imagery via OpenAI image API (see scripts/generate-images.mjs),
-  EXCEPT the "meet your driver" portrait which must be a real photo.
+- Voice: friendly **local team**, not a solo owner-driver (he subcontracts) — generic, never "just him".
+- Imagery: **AI-generated realistic** imagery via OpenAI image API (see scripts/generate-images.mjs);
+  the "about" slot is the **car/service**, not one named person.
 
 ## SEO strategy
 Primary target: Chiddingfold (low competition, affluent GU8 village). Also capture the

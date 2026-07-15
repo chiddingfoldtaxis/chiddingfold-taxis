@@ -65,12 +65,12 @@ const IMAGE_MANIFEST = [
   {
     slot: 'about', size: '1024x1536', quality: 'high', realPhoto: true,
     prompt:
-      'TEMPORARY PLACEHOLDER ONLY — replace with a real photo of the actual owner-driver. ' +
-      'Natural, un-posed documentary portrait, 50mm lens, soft daylight, gentle catchlight, ' +
-      'warm genuine relaxed smile. A friendly, approachable British man standing easily beside ' +
-      'a clean dark executive saloon on a leafy Surrey village street with tile-hung cottages ' +
-      'softly blurred behind. Smart-casual dark jacket, open collar, no tie. Real skin texture, ' +
-      'editorial not glamorous. Vertical framing with headroom.',
+      'A clean dark executive saloon parked on a leafy Surrey village street with tile-hung ' +
+      'cottages softly blurred behind, soft daylight, editorial documentary feel. Optionally a ' +
+      'friendly driver in a smart dark jacket standing easily beside the car, seen from a ' +
+      'respectful distance with the face not the focus (keep any person generic and ' +
+      'illustrative, not a specific named individual). Spotless bodywork, welcoming and ' +
+      'trustworthy. Vertical framing with headroom.',
   },
   {
     slot: 'vehicle-exterior', size: '1536x1024', quality: 'high', realPhoto: true,
