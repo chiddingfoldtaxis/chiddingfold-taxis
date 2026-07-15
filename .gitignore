@@ -1,0 +1,26 @@
+# Dependencies
+node_modules/
+
+# Env / secrets (never commit API keys)
+.env
+.env.local
+*.key
+
+# OS / editor / tooling
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+.claude/settings.local.json
+
+# Logs
+*.log
+npm-debug.log*
+
+# Local build / temp
+/tmp/
+/scratch/
+
+# NOTE: assets/images/ IS committed — GitHub Pages serves the site's images
+# from the repo. Do not ignore generated site imagery.

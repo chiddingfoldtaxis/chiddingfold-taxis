@@ -1,0 +1,19 @@
+{
+  "name": "chiddingfold-taxis",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static one-page website for Chiddingfold Taxis (Godalming, Surrey). Hosted on GitHub Pages.",
+  "type": "module",
+  "scripts": {
+    "dev": "npx serve . -l 5173",
+    "images": "node scripts/generate-images.mjs",
+    "images:one": "node scripts/generate-images.mjs --only",
+    "check:links": "echo 'Open index.html and run through the checklist in README.md'"
+  },
+  "dependencies": {
+    "openai": "^4.67.0"
+  },
+  "devDependencies": {
+    "serve": "^14.2.4"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Chiddingfold Taxis",
+  "short_name": "Chiddingfold Taxis",
+  "description": "24/7 local taxis and airport transfers across Chiddingfold, Godalming, Haslemere and the Surrey Hills.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "browser",
+  "background_color": "#0e2e3e",
+  "theme_color": "#0e2e3e",
+  "icons": [
+    { "src": "favicon.svg", "type": "image/svg+xml", "sizes": "any" },
+    { "src": "assets/icons/icon-192.png", "type": "image/png", "sizes": "192x192" },
+    { "src": "assets/icons/icon-512.png", "type": "image/png", "sizes": "512x512" },
+    { "src": "assets/icons/icon-512-maskable.png", "type": "image/png", "sizes": "512x512", "purpose": "maskable" }
+  ]
+}

@@ -1,0 +1,21 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Chiddingfold Taxis">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#123b52"/>
+      <stop offset="1" stop-color="#0c2231"/>
+    </linearGradient>
+  </defs>
+  <!-- badge -->
+  <rect x="1.5" y="1.5" width="61" height="61" rx="15" fill="url(#sky)"/>
+  <rect x="1.5" y="1.5" width="61" height="61" rx="15" fill="none" stroke="#f2a541" stroke-opacity="0.35" stroke-width="1.5"/>
+  <!-- Surrey hills -->
+  <path d="M6 44c6-9 11-9 17-2 5 6 10 6 15-1 4-5 8-6 14-2v20a5 5 0 0 1-5 5H11a5 5 0 0 1-5-5z" fill="#2f6f4e" opacity="0.9"/>
+  <path d="M6 50c7-7 12-6 18 0 5 5 11 4 16-2 4-4 9-5 16-1v10a5 5 0 0 1-5 5H11a5 5 0 0 1-5-5z" fill="#255c40"/>
+  <!-- winding road -->
+  <path d="M30 62c2-10 8-13 6-22-2-8 4-12 4-12" fill="none" stroke="#f7f4ee" stroke-width="3.2" stroke-linecap="round" stroke-dasharray="0.1 6.2"/>
+  <path d="M30 62c2-10 8-13 6-22-2-8 4-12 4-12" fill="none" stroke="#f7f4ee" stroke-opacity="0.25" stroke-width="6" stroke-linecap="round"/>
+  <!-- location pin / welcome light -->
+  <circle cx="40.5" cy="20" r="8.5" fill="#f2a541"/>
+  <circle cx="40.5" cy="20" r="8.5" fill="none" stroke="#0c2231" stroke-opacity="0.15" stroke-width="1.5"/>
+  <circle cx="40.5" cy="20" r="3.1" fill="#0c2231"/>
+</svg>
