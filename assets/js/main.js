@@ -29,28 +29,6 @@
   var y = document.querySelector('[data-year]');
   if (y) y.textContent = String(new Date().getFullYear());
 
-  /* ---- Reveal on scroll (flash-free: only hide off-screen elements) -- */
-  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  if ('IntersectionObserver' in window && !reduce) {
-    var targets = document.querySelectorAll(
-      '.section__head, .airport-card, .service-card, .review-card, .why__media, .quote__form, .area-tags, .cta-band__inner'
-    );
-    var io = new IntersectionObserver(function (entries, obs) {
-      entries.forEach(function (en) {
-        if (en.isIntersecting) { en.target.classList.add('is-in'); obs.unobserve(en.target); }
-      });
-    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
-
-    var vh = window.innerHeight || document.documentElement.clientHeight;
-    targets.forEach(function (el) {
-      // Only animate elements that start below the fold — avoids any flash.
-      if (el.getBoundingClientRect().top > vh * 0.9) {
-        el.classList.add('reveal');
-        io.observe(el);
-      }
-    });
-  }
-
   /* ---- Quote form --------------------------------------------------- */
   var form = document.querySelector('.quote__form');
   if (form) {

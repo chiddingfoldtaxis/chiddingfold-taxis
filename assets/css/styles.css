@@ -188,11 +188,6 @@ a { color: inherit; }
 .section--quote .link { color: var(--amber); }
 .section--quote .link:hover { color: #ffc76b; }
 
-/* reveal-on-scroll (progressive; content is visible if JS/observer absent) */
-.reveal { opacity: 0; transform: translateY(16px); transition: opacity .6s ease, transform .6s ease; }
-.reveal.is-in { opacity: 1; transform: none; }
-@media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; transition: none; } }
-
 /* ----- Airport grid ------------------------------------------------------ */
 .airport-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; }
 .airport-card {
