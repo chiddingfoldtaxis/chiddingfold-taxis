@@ -24,3 +24,4 @@ npm-debug.log*
 
 # NOTE: assets/images/ IS committed — GitHub Pages serves the site's images
 # from the repo. Do not ignore generated site imagery.
+.gstack/
