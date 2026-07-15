@@ -70,7 +70,7 @@ body {
   overflow-x: hidden;
 }
 
-h1, h2, h3 { line-height: 1.12; letter-spacing: -.02em; font-weight: 800; color: var(--navy); }
+h1, h2, h3 { line-height: 1.12; letter-spacing: -.02em; font-weight: 800; color: var(--navy); text-wrap: balance; }
 h1 { font-size: var(--h1); }
 h2 { font-size: var(--h2); }
 h3 { font-size: var(--h3); }
