@@ -220,8 +220,9 @@ a { color: inherit; }
 .airport-card__meta span { display: inline-flex; align-items: center; }
 .airport-card__meta span + span::before { content: "·"; margin-right: 1rem; color: var(--line); }
 .airport-card__cta {
-  margin-top: auto; align-self: flex-start; text-decoration: none; font-weight: 700; color: var(--teal);
-  padding: .5rem .9rem; border-radius: 999px; background: var(--green-soft);
+  margin-top: auto; align-self: flex-start; display: inline-flex; align-items: center;
+  min-height: 44px; text-decoration: none; font-weight: 700; color: var(--teal);
+  padding: .5rem 1rem; border-radius: 999px; background: var(--green-soft);
   font-size: .92rem; transition: background .15s, color .15s;
 }
 .airport-card__cta:hover { background: var(--amber); color: #241500; }
