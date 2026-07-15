@@ -206,7 +206,7 @@ a { color: inherit; }
 .section--quote .link:hover { color: #ffc76b; }
 
 /* ----- Airport grid ------------------------------------------------------ */
-.airport-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; }
+.airport-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
 .airport-card {
   background: #fff; border: 1px solid var(--line); border-radius: var(--radius);
   padding: 1.3rem 1.3rem 1.1rem; box-shadow: var(--shadow);
@@ -239,7 +239,10 @@ a { color: inherit; }
 }
 
 /* ----- Services ---------------------------------------------------------- */
-.service-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.1rem; }
+.service-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.1rem; }
+/* 6 cards read as a balanced 3x2, dropping to 2 then 1 column as space tightens */
+@media (max-width: 880px) { .airport-grid, .service-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 540px) { .airport-grid, .service-grid { grid-template-columns: 1fr; } }
 .service-card {
   background: var(--cream); border: 1px solid var(--line); border-radius: var(--radius);
   padding: 1.5rem; transition: transform .14s ease, box-shadow .18s ease;
