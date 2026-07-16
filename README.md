@@ -122,6 +122,21 @@ the profile reinforce each other. Then:
 The site is written to be **truthful**. A few claims and placeholders are flagged in the code
 with `⚑ CONFIRM` / `TODO` comments — **check each before publishing**:
 
+**Landing pages** (`content/landing-pages.json` → `node scripts/build-pages.mjs`):
+- [ ] **WhatsApp number** — `07453 267475`, taken from the Google profile card. Confirm it's
+      correct and WhatsApp-enabled before launch. A wrong number on the button is worse than no button.
+- [ ] **Heathrow drop-off fee** — the Heathrow page quotes **£7 "at the time of writing"**.
+      Heathrow changes this. Re-check it, or delete the sentence.
+- [ ] **Does the fixed fare include the Heathrow drop-off fee / waiting time?** The copy is
+      deliberately silent because nobody confirmed it. Decide, then say so — it's exactly the kind
+      of surprise the "fixed fare, no meter" promise is meant to prevent.
+- [ ] **M25 J10 (Wisley) roadworks** — the Heathrow page says "the main parts are now open",
+      hedged deliberately. Re-check before launch; National Highways listed completion as spring 2026.
+- [ ] **Google rating** — "4.7 out of 5 from 46 reviews" is a snapshot taken on 16 Jul 2026.
+      Re-check it when you next edit the reviews section.
+- [ ] Journey times/distances across the pages are third-party estimates, written as approximate
+      and traffic-dependent throughout. Never tighten them into promises.
+
 **Must be confirmed true (or removed):**
 - [ ] **Licensing** — the page says *"Licensed private hire — Waverley Borough Council."*
       Confirm the current licence is held; add the operator/licence number if you have it.

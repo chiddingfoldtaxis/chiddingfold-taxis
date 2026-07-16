@@ -182,6 +182,26 @@ a { color: inherit; }
 .hero__trust li { display: inline-flex; align-items: center; gap: .5rem; font-weight: 600; font-size: .96rem; color: #eaf6f8; }
 .hero__trust .ico { color: var(--amber); }
 
+/* ----- Landing pages: compact hero + long-form prose -------------------- */
+.page-hero { background: radial-gradient(120% 100% at 80% 0%, var(--teal) 0%, var(--navy) 45%, var(--navy-2) 100%); color: #fff; }
+.page-hero__inner { padding-block: clamp(2.4rem, 6vw, 4rem); max-width: 780px; }
+.page-hero h1 { color: #fff; font-family: var(--font-display); font-weight: 700; letter-spacing: -.015em; font-size: clamp(1.9rem, 4.4vw, 3rem); }
+.page-hero__intro { margin-top: 1rem; color: #dff0f3; font-size: clamp(1.02rem, 1.5vw, 1.18rem); }
+.page-hero__cta { display: flex; flex-wrap: wrap; gap: .7rem; margin-top: 1.6rem; }
+.breadcrumb { font-size: .88rem; color: #9fc3cc; margin-bottom: .9rem; }
+.breadcrumb a { color: #cfe2e7; text-decoration: none; }
+.breadcrumb a:hover { color: var(--amber); text-decoration: underline; }
+
+.prose { max-width: 68ch; }
+.prose h2 { margin-top: 2.4rem; margin-bottom: .7rem; font-family: var(--font-display); font-weight: 700; letter-spacing: -.015em; font-size: clamp(1.4rem, 2.6vw, 1.9rem); }
+.prose p { color: var(--muted); margin-bottom: 1rem; }
+.prose ul { margin: 0 0 1.1rem 1.15rem; color: var(--muted); }
+.prose li { margin-bottom: .45rem; }
+.prose strong { color: var(--navy); font-weight: 700; }
+.prose a { color: var(--teal); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
+.prose a:hover { color: var(--amber-dk); }
+.prose__note { background: var(--cream); border: 1px solid var(--line); border-radius: var(--radius-sm); padding: 1rem 1.1rem; margin: 1.4rem 0; color: var(--ink); font-size: .96rem; }
+
 /* ----- Trust strip ------------------------------------------------------- */
 .trust-strip { background: var(--navy-2); color: #fff; }
 .trust-strip__row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; }
