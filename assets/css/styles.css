@@ -270,7 +270,7 @@ a { color: inherit; }
 
 /* Media slots (image placeholders that upgrade to real/AI photos) */
 .media-slot { position: relative; border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-lg);
-  background: linear-gradient(150deg, var(--teal), var(--navy) 70%); aspect-ratio: 4 / 5; }
+  background: linear-gradient(150deg, var(--teal), var(--navy) 70%); aspect-ratio: 2 / 3; }
 .media-slot img { width: 100%; height: 100%; object-fit: cover; }
 .media-slot figcaption { position: absolute; inset: auto 0 0 0; padding: .8rem 1rem; font-size: .82rem; color: #cfe2e7;
   background: linear-gradient(transparent, rgba(10,36,49,.85)); text-align: center; }
