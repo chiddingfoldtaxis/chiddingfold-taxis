@@ -120,6 +120,10 @@ a { color: inherit; }
 }
 .btn:active { transform: translateY(1px); }
 .btn:disabled { opacity: .5; cursor: not-allowed; box-shadow: none; transform: none; }
+/* WhatsApp: its own green so it reads instantly as WhatsApp, but kept as a
+   secondary route so it never competes with the amber tap-to-call. */
+.btn--wa { background: #25d366; color: #06301a; }
+.btn--wa:hover { background: #1fb855; }
 .btn--call { background: var(--amber); color: #241500; box-shadow: 0 6px 18px rgba(244,165,42,.4); }
 .btn--call:hover { background: var(--amber-dk); box-shadow: 0 8px 22px rgba(244,165,42,.5); }
 .btn--ghost { background: transparent; color: #fff; border-color: rgba(255,255,255,.6); }
@@ -299,6 +303,7 @@ a { color: inherit; }
 .review-card figcaption { margin-top: .9rem; color: var(--muted); font-weight: 600; font-size: .9rem; }
 .review-card figcaption span { color: var(--muted-2); font-weight: 500; font-style: italic; }
 .reviews__foot { margin-top: 1.5rem; }
+.reviews__note { display: block; margin-top: .4rem; font-size: .85rem; color: var(--muted); }
 
 /* ----- Quote form -------------------------------------------------------- */
 .quote__grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(1.6rem, 4vw, 3.4rem); align-items: start; }

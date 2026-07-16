@@ -483,28 +483,36 @@
         <div class="section__head">
           <p class="eyebrow">What customers say</p>
           <h2 class="section__title" id="reviews-title">Trusted by local travellers</h2>
-          <p class="section__intro">A few words from people we've driven. <!-- ⚑ Replace all three with real Google reviews before launch --></p>
+          <!-- Real reviews, quoted verbatim from our Google Business Profile.
+               Rating/count are a snapshot — re-check them when you edit this page.
+               Deliberately NOT marked up as AggregateRating: self-published review
+               schema is ineligible for star rich-results and risks a manual action. -->
+          <p class="section__intro">
+            Rated <strong>4.7 out of 5</strong> from <strong>46 reviews</strong> on Google.
+            Here are a few of them, word for word.
+          </p>
         </div>
         <div class="review-grid">
           <figure class="review-card">
             <div class="stars" role="img" aria-label="Rated 5 out of 5 stars">★★★★★</div>
-            <blockquote>“Booked an early Gatwick run and the driver was outside five minutes early. Relaxed, friendly and got us there in great time. Wouldn't use anyone else now.”</blockquote>
-            <figcaption>— Example review · <span>replace with a real one</span></figcaption>
+            <blockquote>“Brilliant taxi service from start to finish. We used them to travel to Gatwick both ways. Reliable, polite, friendly &amp; good value for money. Highly recommended local Godalming taxi service.”</blockquote>
+            <figcaption>— Lucy Hogan · <span>Google review</span></figcaption>
           </figure>
           <figure class="review-card">
             <div class="stars" role="img" aria-label="Rated 5 out of 5 stars">★★★★★</div>
-            <blockquote>“Reliable, always on time and really friendly. We use them for the station and airport runs and they've never once let us down.”</blockquote>
-            <figcaption>— Example review · <span>replace with a real one</span></figcaption>
+            <blockquote>“We used this company a couple of times for business and leisure and all times of the day and night. Faisal was excellent every time. Always on time and courteous, and the car was very comfortable. Would recommend.”</blockquote>
+            <figcaption>— Tessie Belton · <span>Google review</span></figcaption>
           </figure>
           <figure class="review-card">
             <div class="stars" role="img" aria-label="Rated 5 out of 5 stars">★★★★★</div>
-            <blockquote>“Fixed price agreed up front, spotless car and a friendly chat the whole way to Heathrow. Exactly what you want at 4am.”</blockquote>
-            <figcaption>— Example review · <span>replace with a real one</span></figcaption>
+            <blockquote>“Faisal was amazing with our multiple taxi bookings for our special occasion. There wasn't one detail he missed, the taxis were prompt and nothing was too much trouble. I'll definitely be back next time we have an occasion.”</blockquote>
+            <figcaption>— Evie · <span>Google review</span></figcaption>
           </figure>
         </div>
-        <!-- ⚑ TODO: swap this for your live Google reviews URL once the Google Business Profile is set up.
-             For now it points at the Google Maps listing (a real page) rather than a dead link. -->
-        <p class="reviews__foot"><a class="link" href="https://maps.google.com/?q=26+Nightingale+Rd+Godalming+GU7+3AQ" target="_blank" rel="noopener">Find us on Google →</a></p>
+        <p class="reviews__foot">
+          <a class="link" href="https://maps.google.com/?cid=3476621808399230768" target="_blank" rel="noopener">Read all 46 reviews on Google →</a>
+          <span class="reviews__note">Our Google profile is still listed as Surrey Hill Taxis while we rebrand.</span>
+        </p>
       </div>
     </section>
 
@@ -525,6 +533,13 @@
             <li>Airport, local, long distance &amp; courier</li>
             <li>We aim to reply quickly<!-- ⚑ CONFIRM a reply window the owner can stand behind; the old "within the hour" was an unverified promise --></li>
           </ul>
+          <!-- ⚑ CONFIRM this WhatsApp number is right (taken from the Google Business Profile card: 0745 326 7475) -->
+          <p class="quote__wa">
+            <a class="btn btn--wa" href="https://wa.me/447453267475" target="_blank" rel="noopener">
+              <svg class="ico" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M17.5 14.4c-.3-.1-1.7-.9-2-1s-.5-.1-.7.1c-.2.3-.7 1-.9 1.2s-.3.2-.6.1c-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2s0-.4.1-.6l.4-.5c.1-.2.2-.3.3-.5s0-.4 0-.5c-.1-.1-.7-1.5-.9-2.1-.2-.5-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4s-1 1-1 2.4 1.1 2.8 1.2 3c.1.2 2.1 3.2 5 4.5.7.3 1.2.5 1.7.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.4s.2-1.2.2-1.4c-.1-.1-.3-.2-.6-.3M12 2a10 10 0 0 0-8.6 15l-1.3 4.7 4.9-1.3A10 10 0 1 0 12 2m0 18.2c-1.6 0-3.2-.4-4.6-1.3l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2"/></svg>
+              Send flight details on WhatsApp
+            </a>
+          </p>
         </div>
 
         <!-- ⚑ TODO: create a free form endpoint at https://formspree.io (or Web3Forms/Basin)
@@ -551,7 +566,7 @@
           <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" class="hp">
           <button class="btn btn--call btn--block" type="submit">Send my quote request</button>
           <p class="form-status" role="status" aria-live="polite"></p>
-          <p class="form-fallback">Or call <a class="link" href="tel:+441483387475" data-call>01483&nbsp;387&nbsp;475</a>.</p>
+          <p class="form-fallback">Or call <a class="link" href="tel:+441483387475" data-call>01483&nbsp;387&nbsp;475</a> · <a class="link" href="https://wa.me/447453267475" target="_blank" rel="noopener">WhatsApp us</a></p>
         </form>
       </div>
     </section>
@@ -626,6 +641,7 @@
         <h3>Contact</h3>
         <ul class="footer__list">
           <li><a class="link" href="tel:+441483387475" data-call>01483&nbsp;387&nbsp;475</a></li>
+          <li><a class="link" href="https://wa.me/447453267475" target="_blank" rel="noopener">WhatsApp 07453&nbsp;267&nbsp;475</a></li>
           <!-- ⚑ Switch to bookings@chiddingfoldtaxis.co.uk once that mailbox is live -->
           <li><a class="link" href="mailto:bookings@surreyhilltaxis.com">bookings@surreyhilltaxis.com</a></li>
           <li>26 Nightingale Rd, Godalming, Surrey GU7&nbsp;3AQ</li>
