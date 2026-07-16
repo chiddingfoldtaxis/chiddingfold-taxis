@@ -1,7 +1,7 @@
 # Chiddingfold Taxis — website
 
-A fast, modern, one-page static website for **Chiddingfold Taxis** (a rebrand of
-"Surrey Hill Taxis"), based in Godalming, Surrey. Built as plain HTML/CSS/JS with
+A fast, modern static website for **Chiddingfold Taxis**, based in Chiddingfold, Surrey
+(homepage + 5 local/route landing pages). Built as plain HTML/CSS/JS with
 **no build step** and **no runtime dependencies** — it's designed to be hosted free on
 **GitHub Pages** and to load almost instantly on a phone.
 
@@ -107,12 +107,19 @@ Also generate/replace these referenced assets when you can: `assets/images/og-im
 ## 📈 After launch — the biggest SEO win
 
 The single highest-impact thing for a local taxi firm is a fully-completed **Google Business
-Profile** at the Godalming address, in the right categories (Taxi service / Airport shuttle
-service), with real photos and a steady trickle of **genuine Google reviews**. The website and
-the profile reinforce each other. Then:
+Profile** — a NEW one for Chiddingfold Taxis at the Hartsgrove, GU8 4RG address, in the right
+categories (Taxi service + Airport shuttle service + Car service), with real photos and a
+steady trickle of **genuine Google reviews**. Being genuinely based in Chiddingfold is the
+advantage here: local-pack rank is driven by proximity to the searcher, so this address can
+win Chiddingfold in a way a Godalming-based firm cannot.
+
+⚠️ **Watch the shared phone number.** Surrey Hill Taxis' profile also uses 01483 387 475.
+Two separate businesses sharing one number is a classic duplicate-listing trigger — Google may
+suppress or merge them. Worth giving Chiddingfold Taxis its own number, or at minimum expect
+a verification fight. Then:
 
 - Submit the site in **Google Search Console** and **Bing Webmaster Tools** and submit `sitemap.xml`.
-- Add the live Google reviews link to the "Find us on Google" link in the reviews section of `index.html`.
+- Once the new profile has real reviews, restore the reviews section (see git history: "real Google reviews") with **Chiddingfold Taxis'** own reviews — never the other company's.
 - Add your real social profile URLs to the `sameAs: []` array in the JSON-LD (and the footer).
 
 ---
@@ -150,7 +157,7 @@ with `⚑ CONFIRM` / `TODO` comments — **check each before publishing**:
       actually stand behind (or leave it as-is; it's deliberately non-committal).
 - [ ] **`priceRange` in schema** — the JSON-LD has `"priceRange": "££"` (a relative "moderate"
       tier, not a fixed price). Confirm that's fair, or delete the line.
-- [ ] **Email** — currently `bookings@surreyhilltaxis.com` (the working address). Switch to
+- [ ] **Email** — currently `info@chiddingfoldtaxis.co.uk` (the working address). Switch to
       `bookings@chiddingfoldtaxis.co.uk` once that mailbox exists (footer + JSON-LD `email`).
 
 **Fill in the placeholders:**

@@ -1,14 +1,24 @@
 # Chiddingfold Taxis — project context
 
-Static one-page marketing site for a Surrey private-hire taxi business. Hosted on
-GitHub Pages (plain HTML/CSS/JS, no build step, no framework — maximum speed + SEO).
+Static marketing site (homepage + 5 local/route landing pages) for a Surrey private-hire
+taxi business. Hosted on GitHub Pages (plain HTML/CSS/JS, no build step, no framework).
+
+## ⚠️ Chiddingfold Taxis is a SEPARATE COMPANY from Surrey Hill Taxis
+The owner runs both as **separate companies**. Surrey Hill Taxis (Godalming) continues
+independently. **This site must contain NO reference to Surrey Hill Taxis** — not in copy,
+not in schema `alternateName`, not in a "formerly" line. It is not a rebrand.
+
+Consequence: Surrey Hill Taxis' Google reviews (4.7/46) **must not appear here** — they are
+another company's reputation, and this company has none yet. The reviews section was removed
+for exactly this reason; restore it only when Chiddingfold Taxis has its own profile/reviews.
 
 ## The business (verified facts — do not invent beyond these)
-- **Brand / trading name:** Chiddingfold Taxis (rebrand from "Surrey Hill Taxis")
-- **New domain:** chiddingfoldtaxis.co.uk (GitHub Pages custom domain)
-- **Physical base:** 26 Nightingale Rd, Godalming GU7 3AQ (brand is Chiddingfold; base is Godalming ~15 min north)
-- **Phone (primary CTA, tap-to-call):** 01483 387 475
-- **Email:** bookings@surreyhilltaxis.com  (may move to bookings@chiddingfoldtaxis.co.uk — confirm before hard-coding)
+- **Brand / trading name:** Chiddingfold Taxis (a new, separate company)
+- **Domain:** chiddingfoldtaxis.co.uk (GitHub Pages custom domain)
+- **Physical base:** Hartsgrove, Chiddingfold, GU8 4RG — genuinely IN Chiddingfold
+  (geo 51.117773, -0.635982, verified via postcodes.io; parish/ward = Chiddingfold, Waverley)
+- **Phone (primary CTA, tap-to-call):** 01483 387 475  ·  **WhatsApp:** 07453 267475 (⚑ confirm)
+- **Email:** info@chiddingfoldtaxis.co.uk
 - **Hours:** 24 hours, 7 days a week
 - **Services:** Airport transfers (main trade), local rides, long distance, courier, weddings, shopping trips
 - **Airports served:** Heathrow, Gatwick, Luton, Stansted, London City

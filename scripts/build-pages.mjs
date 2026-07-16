@@ -44,7 +44,6 @@ const header = () => `
           <li><a class="nav__link" href="../godalming-taxis/">Godalming</a></li>
           <li><a class="nav__link" href="../haslemere-taxis/">Haslemere</a></li>
           <li><a class="nav__link" href="../#areas">Areas</a></li>
-          <li><a class="nav__link" href="../#reviews">Reviews</a></li>
           <li><a class="nav__link" href="../#quote">Quote</a></li>
         </ul>
       </nav>
@@ -67,8 +66,8 @@ const footer = () => `
         <ul class="footer__list">
           <li><a class="link" href="${TEL_HREF}" data-call>${TEL_DISPLAY}</a></li>
           <li><a class="link" href="${WA_HREF}" target="_blank" rel="noopener">WhatsApp 07453&nbsp;267&nbsp;475</a></li>
-          <li><a class="link" href="mailto:bookings@surreyhilltaxis.com">bookings@surreyhilltaxis.com</a></li>
-          <li>26 Nightingale Rd, Godalming, Surrey GU7&nbsp;3AQ</li>
+          <li><a class="link" href="mailto:info@chiddingfoldtaxis.co.uk">info@chiddingfoldtaxis.co.uk</a></li>
+          <li>Hartsgrove, Chiddingfold, Surrey GU8&nbsp;4RG</li>
           <li>Open 24 hours · 7 days a week</li>
         </ul>
       </div>
@@ -92,10 +91,9 @@ const footer = () => `
       </div>
     </div>
     <div class="container footer__legal">
-      <p>© <span data-year>2026</span> Chiddingfold Taxis · Godalming, Surrey.
+      <p>© <span data-year>2026</span> Chiddingfold Taxis · Chiddingfold, Surrey.
       <!-- ⚑ CONFIRM licensing line before publishing -->
       Licensed private hire — Waverley Borough Council.</p>
-      <p class="footer__note">Formerly Surrey Hill Taxis.</p>
     </div>
   </footer>`;
 
@@ -140,9 +138,9 @@ const render = (p) => {
   <meta name="theme-color" content="#0e2e3e">
   <meta name="format-detection" content="telephone=yes">
   <meta name="geo.region" content="GB-SRY">
-  <meta name="geo.placename" content="Godalming, Surrey">
-  <meta name="geo.position" content="51.192209;-0.6094189">
-  <meta name="ICBM" content="51.192209, -0.6094189">
+  <meta name="geo.placename" content="Chiddingfold, Surrey">
+  <meta name="geo.position" content="51.117773;-0.635982">
+  <meta name="ICBM" content="51.117773, -0.635982">
 
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Chiddingfold Taxis">
