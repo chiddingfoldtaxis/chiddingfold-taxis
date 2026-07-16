@@ -11,7 +11,7 @@
  *       npm run images -- --list  # show all slots and exit
  *
  * Output: assets/images/<slot>.webp  (web-ready, small).
- * Cost: roughly $0.02–0.25 per image on gpt-image-1; the whole set is a few dollars.
+ * Cost: roughly $0.02–0.25 per image on gpt-image-2; the whole set is a few dollars.
  *
  * IMPORTANT — read scripts/IMAGE-NOTES before publishing:
  *   • Check EVERY car render is RIGHT-HAND-DRIVE (wheel on the right). The model
@@ -41,63 +41,70 @@ function loadEnv() {
 }
 loadEnv();
 
-/* -- shared house style: keeps the whole set looking like one real brand -- */
+/* -- shared house style: keeps the whole set looking like one real brand --
+   THE CAR IS A RED TOYOTA COROLLA (his actual car, ~5 years old). Keep it that
+   way in every shot — an ordinary, friendly, well-kept everyday car, not an
+   executive motor. */
 const STYLE =
   'House style (apply to every image): photorealistic editorial documentary photograph, ' +
   'full-frame camera, 35mm lens, soft overcast English daylight, natural realistic shadows, ' +
-  'muted true-to-life colour grade — NOT glossy stock advertising, no lens flare, no HDR, ' +
-  'no text, no watermark. United Kingdom setting; any car is a clean modern dark metallic ' +
-  'executive saloon or estate, RIGHT-HAND-DRIVE (steering wheel on the RIGHT), with NO ' +
-  'visible brand badges or logos and NO legible number plate (angle plates away or blur them). ' +
-  'Distinctly English countryside/townscape — not Mediterranean, not American.';
+  'muted true-to-life colour — NOT glossy stock advertising, no lens flare, no HDR, no text, ' +
+  'no watermark. United Kingdom setting, RIGHT-HAND-DRIVE (steering wheel on the RIGHT). ' +
+  'The car is a clean, well-kept RED TOYOTA COROLLA, a recent model about five years old ' +
+  '(2019-2021 twelfth-generation Corolla), spotless red bodywork — an ordinary, friendly, ' +
+  'reliable everyday family car, NOT a luxury or executive car. Keep number plates blank or ' +
+  'angled away (never legible). Friendly, local, approachable, never flashy. Distinctly ' +
+  'English countryside/townscape, not Mediterranean, not American.';
 
-/* -- the image set (from the art-direction brief) ------------------------ */
+/* -- the image set ------------------------------------------------------- */
 const IMAGE_MANIFEST = [
   {
     slot: 'hero', size: '1536x1024', quality: 'high', realPhoto: false,
     prompt:
-      'A clean dark-grey metallic executive saloon parked on the grass verge of a quiet ' +
-      'single-track Surrey Hills country lane at soft golden hour. Tall green hedgerows, ' +
-      'mature oak and beech trees, rolling Greensand Ridge farmland beyond, damp tarmac ' +
-      'catching gentle light. Composition wide and calm with clean uncluttered sky in the ' +
-      'upper-right third for headline text. Trustworthy, unhurried.',
+      'A clean red Toyota Corolla (recent model, about five years old) parked on the grass ' +
+      'verge of a quiet single-track Surrey Hills country lane at soft golden hour. Tall green ' +
+      'hedgerows, mature oak and beech trees, rolling farmland beyond, damp tarmac catching ' +
+      'gentle light. Composition wide and calm with clean uncluttered sky in the upper-right ' +
+      'third for headline text. Trustworthy, unhurried.',
   },
   {
     slot: 'about', size: '1024x1536', quality: 'high', realPhoto: true,
     prompt:
-      'A clean dark executive saloon parked on a leafy Surrey village street with tile-hung ' +
-      'cottages softly blurred behind, soft daylight, editorial documentary feel. Optionally a ' +
-      'friendly driver in a smart dark jacket standing easily beside the car, seen from a ' +
-      'respectful distance with the face not the focus (keep any person generic and ' +
-      'illustrative, not a specific named individual). Spotless bodywork, welcoming and ' +
-      'trustworthy. Vertical framing with headroom.',
+      'PREFER A REAL PHOTO of his actual red Corolla (a quick wash-and-photograph beats any ' +
+      'render). AI version: the freshly cleaned red Toyota Corolla parked on a leafy Surrey ' +
+      'village street with tile-hung cottages softly blurred behind, soft daylight, editorial ' +
+      'documentary feel. Optionally a friendly driver in a smart-casual jacket standing easily ' +
+      'beside the car, seen from a respectful distance with the face not the focus (keep any ' +
+      'person generic and illustrative, not a specific named individual). Spotless red bodywork, ' +
+      'welcoming and trustworthy. Vertical framing with headroom.',
   },
   {
     slot: 'vehicle-exterior', size: '1536x1024', quality: 'high', realPhoto: true,
     prompt:
-      'PREFER A REAL PHOTO OF THEIR ACTUAL CAR. AI placeholder: three-quarter front view of a ' +
-      'spotlessly clean dark metallic executive saloon or estate parked on a gravel driveway or ' +
-      'quiet Godalming residential street lined with red-brick and tile-hung Surrey houses. ' +
-      'Clean bodywork with realistic reflections, tidy alloy wheels. Professional and honest, ' +
+      'PREFER A REAL PHOTO OF THE ACTUAL CAR. AI version: three-quarter front view of a ' +
+      'spotlessly clean red Toyota Corolla (recent ~5-year-old model) parked on a gravel ' +
+      'driveway or quiet Godalming residential street lined with red-brick and tile-hung Surrey ' +
+      'houses. Clean red bodywork with realistic reflections, tidy wheels. Honest and friendly, ' +
       'not a showroom advert.',
   },
   {
     slot: 'vehicle-interior', size: '1536x1024', quality: 'high', realPhoto: true,
     prompt:
-      'PREFER A REAL PHOTO of the actual clean rear cabin. AI placeholder: rear-passenger POV of ' +
-      'a clean, tidy executive saloon cabin — supple leather rear seats, immaculate carpets, a ' +
-      'bottle of water in the door pocket, a charging cable neatly to hand, seatbelts fastened. ' +
-      'Through the windscreen a leafy green English lane. Dashboard clearly shows the steering ' +
-      'wheel on the RIGHT. Warm, comfortable, spotless, unbranded.',
+      'PREFER A REAL PHOTO of the actual clean cabin. AI version: rear-passenger POV of a clean, ' +
+      'tidy Toyota Corolla cabin — neat cloth/part-leather rear seats, immaculate carpets, a ' +
+      'bottle of water in the door pocket, a phone-charging cable neatly to hand, seatbelts ' +
+      'fastened. Through the windscreen a leafy green English lane. Dashboard clearly shows the ' +
+      'steering wheel on the RIGHT. Warm, comfortable, spotless.',
   },
   {
     slot: 'airport', size: '1536x1024', quality: 'high', realPhoto: false,
     prompt:
       'A smart, friendly driver in a dark jacket standing calmly in a bright modern international ' +
       'airport arrivals hall, holding a plain white name-board that is BLANK (no readable text). ' +
-      'A relieved traveller with a wheeled suitcase walking toward him. Generic modern terminal ' +
+      'A relieved traveller with a wheeled suitcase walking toward them. Generic modern terminal ' +
       'architecture — absolutely NO real airport names, airline logos, trademarks or legible ' +
-      'signage of any kind. Reassuring, calm, professional, British.',
+      'signage. Reassuring, calm, professional, British. If a car is visible it is the red ' +
+      'Toyota Corolla.',
   },
   {
     slot: 'local-village', size: '1536x1024', quality: 'medium', realPhoto: true,
@@ -119,7 +126,7 @@ const IMAGE_MANIFEST = [
   {
     slot: 'night-24-7', size: '1536x1024', quality: 'medium', realPhoto: false,
     prompt:
-      'Reassuring blue-hour scene (not noir): a clean dark executive saloon waiting on a quiet ' +
+      'Reassuring blue-hour scene (not noir): the clean red Toyota Corolla waiting on a quiet ' +
       'Surrey lane or on a home driveway in the early pre-dawn dark. Warm headlights and a soft ' +
       'glow from the cabin, wet tarmac reflecting light, a calm deep-blue dawn sky beginning to ' +
       'lighten behind bare-branched trees. Conveys quiet, dependable, always-available service.',
@@ -161,13 +168,13 @@ if (!todo.length) {
   process.exit(0);
 }
 
-console.log(`\nGenerating ${todo.length} image(s) with gpt-image-1…\n`);
+console.log(`\nGenerating ${todo.length} image(s) with gpt-image-2…\n`);
 let ok = 0;
 for (const img of todo) {
   process.stdout.write(`  … ${img.slot} ${img.realPhoto ? '(placeholder — swap for a real photo) ' : ''}`);
   try {
     const res = await openai.images.generate({
-      model: 'gpt-image-1',
+      model: 'gpt-image-2',
       prompt: `${img.prompt}\n\n${STYLE}`,
       size: img.size,
       quality: img.quality,
